@@ -46,11 +46,11 @@ export default class TextInputLayout extends Component {
         this._handleChildren(props);
     }
 
-    componentWillReceiveProps (nextProps) {
+    UNSAFE_componentWillReceiveProps (nextProps) {
         this._handleChildren(nextProps);
     }
 
-    componentWillUpdate (nextProps, nextState) {
+    UNSAFE_componentWillUpdate (nextProps, nextState) {
         if (nextState.showLabel !== this.state.showLabel) {
             this._springValue(this.state.labelAnimationValue, nextState.showLabel ? 1 : 0)
         }
