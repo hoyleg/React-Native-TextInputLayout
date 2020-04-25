@@ -1,5 +1,9 @@
-on: push
-
+on:
+  push: 
+    branches: [ master ]
+  watch:
+    types: [started]
+    
 jobs:
   publish:
     runs-on: ubuntu-latest
