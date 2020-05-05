@@ -59,7 +59,8 @@ export default class TextInputLayout extends Component {
     _springValue (animatedValue, toValue) {
         Animated.spring(animatedValue, {
             toValue: toValue,
-            friction: 10
+            friction: 10,
+            useNativeDriver: true
         }).start();
     }
 
