@@ -1,8 +1,8 @@
 on:
   push: 
     branches: [ master ]
-  watch:
-    types: [started]
+ # watch:
+ #   types: [started]
     
 jobs:
   publish:
@@ -16,4 +16,4 @@ jobs:
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_AUTH_TOKEN }}
-          check-version: false
+   #       check-version: false
