@@ -110,9 +110,9 @@ export default class TextInputLayout extends Component {
             outputRange: [fontSize, this.props.labelFontSize]
         });
         this._labelStyle = {
-            fontSize: labelFontSize,
-            height: labelHeight,
-            backgroundColor: 'transparent',
+            //fontSize: labelFontSize,
+            //height: labelHeight,
+            //backgroundColor: 'transparent',
             transform: [{translateY: labelTransY}]
         };
     }
