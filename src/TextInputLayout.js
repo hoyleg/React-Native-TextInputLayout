@@ -151,6 +151,7 @@ export default class TextInputLayout extends Component {
             }, this.props.style]}
             >
                 <Animated.Text
+                    useNativeDriver={true}
                     style={[this._labelStyle, {color: color}]} >
                     {this.props.labelText || this._oriEdtChild.props.placeholder }
                 </Animated.Text>
